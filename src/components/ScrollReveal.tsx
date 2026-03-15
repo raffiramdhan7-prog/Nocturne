@@ -46,8 +46,10 @@ export default function ScrollReveal({
       className={className}
       style={{
         opacity: visible ? 1 : 0,
-        transform: visible ? "translateY(0px)" : "translateY(28px)",
-        transition: `opacity 0.75s cubic-bezier(0.16,1,0.3,1) ${delay}ms, transform 0.75s cubic-bezier(0.16,1,0.3,1) ${delay}ms`,
+        transform: visible 
+          ? "translateY(0px) translateZ(0)" 
+          : "translateY(20px) translateZ(0)",
+        transition: `opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) ${delay}ms, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) ${delay}ms`,
         willChange: "opacity, transform",
       }}
     >
