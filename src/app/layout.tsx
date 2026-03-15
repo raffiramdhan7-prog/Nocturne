@@ -10,6 +10,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Nocturne | Premium Web Development",
   description: "Nocturne transforms digital visions into reality through premium web development and uncompromising performance.",
+  verification: {
+    google: "google0ab1176c12c8e1f3.html",
+  },
 };
 
 export default function RootLayout({
