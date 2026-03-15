@@ -7,7 +7,8 @@
   
   --animate-blob: blob 10s infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
   --animate-blob-reverse: blob-reverse 12s infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
-  --animate-gradient-flow: gradient-flow 4s linear infinite;
+  --animate-gradient-flow: gradient-flow 3s linear infinite;
+  --animate-gradient-flow-paused: gradient-flow 3s linear infinite paused;
   --animate-fade-up-100: fade-up 0.8s ease-out 100ms forwards;
   --animate-fade-up-300: fade-up 0.8s ease-out 300ms forwards;
   --animate-fade-up-500: fade-up 0.8s ease-out 500ms forwards;
@@ -30,9 +31,8 @@
 }
 
 @keyframes gradient-flow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0%   { background-position: 200% center; }
+  100% { background-position: 0%   center; }
 }
 
 @keyframes fade-up {
