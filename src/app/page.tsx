@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useRef, useEffect, useState } from "react";
 import ScrollReveal from "@/components/ScrollReveal";
+import HeroScene from "@/components/HeroScene";
 
 /**
  * Hook: fires a callback whenever the observed element crosses the viewport
@@ -70,21 +71,24 @@ export default function Home() {
 
       {/* Main Hero Section */}
       <main className="min-h-screen flex flex-col items-center justify-center px-6 md:px-8 pb-32 relative overflow-hidden">
-        <div className="z-10 text-center max-w-4xl w-full">
+        {/* Restore the 3D Spline background from v0.5 */}
+        <HeroScene />
+
+        <div className="relative z-10 text-center max-w-4xl w-full">
           {/* Headline -> Second element stagger: 300ms delay */}
           <h1 className="text-[2.25rem] xs:text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-6 opacity-0 animate-fade-up-300">
             We Code <br className="md:hidden" />
             {/* The 'Power' Effect — Intersection Observer controlled gradient flow */}
             <span
               ref={headlineRef}
-              className="text-transparent bg-clip-text bg-[linear-gradient(90deg,#3b82f6,#8b5cf6,#3b82f6,#8b5cf6)] bg-[length:300%_auto] animate-gradient-flow"
+              className="text-transparent bg-clip-text bg-[linear-gradient(90deg,#3b82f6,#8b5cf6,#3b82f6,#8b5cf6)] bg-size-[300%_auto] animate-gradient-flow"
               style={{
                 animationPlayState: isHeadlineVisible ? 'running' : 'paused',
               }}
             >
-              The Future.
+              Your Future
             </span> <br />
-            In The Dark.
+            In The Dark
           </h1>
 
           {/* Sub-headline -> Third element stagger: 500ms delay */}
