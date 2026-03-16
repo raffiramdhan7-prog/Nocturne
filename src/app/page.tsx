@@ -72,7 +72,7 @@ export default function Home() {
       <main className="min-h-screen flex flex-col items-center justify-center px-6 md:px-8 pb-32 relative overflow-hidden">
         <div className="z-10 text-center max-w-4xl w-full">
           {/* Headline -> Second element stagger: 300ms delay */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-6 opacity-0 animate-fade-up-300">
+          <h1 className="text-[2.25rem] xs:text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-6 opacity-0 animate-fade-up-300">
             We Code <br className="md:hidden" />
             {/* The 'Power' Effect — Intersection Observer controlled gradient flow */}
             <span
