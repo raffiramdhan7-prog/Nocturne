@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Advanced App Building | Nocturne Indonesia",
+  description: "Transformasi kehadiran mobile Anda dengan aplikasi native yang dirancang untuk performa mulus di semua perangkat. Segera hadir di Nocturne Indonesia.",
+};
 
 export default function AppEngineeringComingSoon() {
   return (

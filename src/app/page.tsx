@@ -2,8 +2,15 @@
 
 import Link from "next/link";
 import { useRef, useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 import ScrollReveal from "@/components/ScrollReveal";
-import HeroScene from "@/components/HeroScene";
+
+// Performance Optimization: Lazy load heavy 3D Spline scene to prevent blocking SSR
+const HeroScene = dynamic(() => import("@/components/HeroScene"), { 
+  ssr: false,
+  loading: () => <div className="absolute inset-0 bg-black" /> 
+});
+
 import { motion } from "framer-motion";
 
 /**
@@ -56,6 +63,8 @@ export default function Home() {
         <div className="relative z-10 text-center max-w-4xl w-full">
           {/* Headline -> Second element stagger: 300ms delay */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-6 opacity-0 animate-fade-up-300">
+            {/* SEO Optimization: Visually hidden text for ranking */}
+            <span className="sr-only">Nocturne Indonesia: Solusi Bikin Website & Digital Ecosystem</span>
             We Code <br className="md:hidden" />
             {/* The 'Power' Effect — Intersection Observer controlled gradient flow */}
             <span
@@ -122,12 +131,14 @@ export default function Home() {
               className="absolute inset-0"
               animate={{ y: [0, -12, 0] }}
               transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+              style={{ willChange: "transform, opacity" }}
             >
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_40%_35%,rgba(59,130,246,0.28),transparent_55%),radial-gradient(circle_at_60%_60%,rgba(139,92,246,0.22),transparent_55%)] blur-2xl" />
               <motion.div
                 className="absolute left-1/2 top-1/2 h-[260px] w-[260px] md:h-[320px] md:w-[320px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_30%_30%,rgba(59,130,246,0.55),rgba(0,0,0,0)_60%),radial-gradient(circle_at_70%_70%,rgba(139,92,246,0.45),rgba(0,0,0,0)_58%)] blur-2xl opacity-90"
                 animate={{ scale: [1, 1.05, 1] }}
                 transition={{ duration: 4.8, repeat: Infinity, ease: "easeInOut" }}
+                style={{ willChange: "transform, opacity" }}
               />
               <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60" />
             </motion.div>

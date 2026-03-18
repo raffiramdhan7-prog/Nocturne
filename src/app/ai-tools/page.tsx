@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Expert AI Engineering | Nocturne Indonesia",
+  description: "Bangun sistem kecerdasan buatan custom untuk optimasi alur kerja dan peningkatan kapabilitas produk Anda. Segera hadir di Nocturne Indonesia.",
+};
 
 export default function AIToolsComingSoon() {
   return (

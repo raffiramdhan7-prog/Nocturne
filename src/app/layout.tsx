@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import JsonLd from "@/components/JsonLd";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -10,24 +11,26 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Nocturne Indonesia | Premium Web Development & Digital Ecosystems",
+  title: "Nocturne Indonesia | Jasa Bikin Website & Digital Ecosystem",
   description:
-    "Nocturne is a digital architecture agency. Jasa pembuatan website premium, web development, dan AI engineering untuk ekosistem digital bisnis Anda. Buat website profesional sekarang.",
+    "Nocturne Indonesia adalah agensi creative engineering. Kami melayani jasa pembuatan website, app building, dan AI engineering untuk transformasi digital bisnis Anda. Buat website profesional sekarang.",
   keywords: [
     "Nocturne Indonesia",
     "Bikin Website",
+    "Jasa Pembuatan Website",
     "Pembuatan Website",
     "Buat Website",
     "Web Development Agency",
     "Digital Ecosystem",
     "Jasa Bikin Web",
+    "AI Engineering Indonesia"
   ],
   openGraph: {
-    title: "Nocturne Indonesia | Premium Web Development & Digital Ecosystems",
+    title: "Nocturne Indonesia | Jasa Bikin Website & Digital Ecosystem",
     description:
-      "Nocturne is a digital architecture agency. Jasa pembuatan website premium, web development, dan AI engineering untuk ekosistem digital bisnis Anda. Buat website profesional sekarang.",
+      "Nocturne Indonesia adalah agensi creative engineering. Kami melayani jasa pembuatan website, app building, dan AI engineering untuk transformasi digital bisnis Anda.",
     type: "website",
-    siteName: "Nocturne",
+    siteName: "Nocturne Indonesia",
   },
   verification: {
     google: "google0ab1176c12c8e1f3.html",
@@ -45,6 +48,7 @@ export default function RootLayout({
         className={`${inter.variable} antialiased font-sans bg-black text-white`}
         suppressHydrationWarning
       >
+        <JsonLd />
         <div className="flex flex-col min-h-screen">
           <Header />
           <main className="flex-grow">{children}</main>
