@@ -4,12 +4,7 @@ export default function AIToolsComingSoon() {
   return (
     <div className="min-h-screen bg-black text-white font-sans flex flex-col items-center justify-center relative overflow-hidden px-6 md:px-8 selection:bg-blue-500/30">
       
-      {/* Refined Navigation Header */}
-      <nav className="absolute top-0 w-full max-w-7xl mx-auto px-6 py-6 flex justify-between items-center z-50">
-        <Link href="/" className="font-bold text-2xl tracking-tighter cursor-pointer">
-          NOCTURNE<span className="text-blue-500">.</span>
-        </Link>
-      </nav>
+      {/* Global Header is rendered by layout.tsx */}
 
       {/* Pulsing Background Glows */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
@@ -28,7 +23,7 @@ export default function AIToolsComingSoon() {
 
         {/* Headline */}
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 opacity-0 animate-fade-up-300 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">
-          Expert AI Tools
+          Expert AI Engineering
         </h1>
 
         {/* Sub-headline */}

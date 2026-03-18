@@ -5,22 +5,6 @@ export default function StartProject() {
   return (
     <div className="min-h-screen bg-black text-white font-sans selection:bg-blue-500/30 relative">
 
-      {/* Navigation */}
-      <nav className="w-full max-w-7xl mx-auto px-6 py-5 flex justify-between items-center z-50 relative">
-        <Link href="/" className="font-bold text-2xl tracking-tighter cursor-pointer">
-          NOCTURNE<span className="text-blue-500">.</span>
-        </Link>
-        <Link
-          href="/"
-          className="inline-flex items-center gap-2 text-sm font-medium text-zinc-400 hover:text-white transition-colors duration-300 group"
-        >
-          <svg className="w-4 h-4 group-hover:-translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
-          </svg>
-          Back to Home
-        </Link>
-      </nav>
-
       {/* Page Header */}
       <div className="text-center pt-12 pb-6 px-6 opacity-0 animate-fade-up-100">
         <h1 className="text-4xl md:text-6xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
@@ -118,7 +102,7 @@ export default function StartProject() {
       </div>
 
       {/* ─────────────────────────────────────────
-          SECTION B: Advanced App Engineering
+          SECTION B: Advanced App Building
       ───────────────────────────────────────── */}
       <section className="px-6 md:px-8 mt-16 pb-10 relative z-10">
         <ScrollReveal>
@@ -139,7 +123,7 @@ export default function StartProject() {
               {/* Content */}
               <div className="flex-1 text-center md:text-left relative z-10">
                 <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                  Advanced App Engineering
+                  Advanced App Building
                 </h2>
                 <p className="text-sm font-medium tracking-[0.3em] text-purple-300/80 mb-4">
                   COMING SOON
@@ -162,7 +146,7 @@ export default function StartProject() {
       </section>
 
       {/* ─────────────────────────────────────────
-          SECTION C: Expert AI Tools
+          SECTION C: Expert AI Engineering
       ───────────────────────────────────────── */}
       <section className="px-6 md:px-8 mt-8 pb-24 relative z-10">
         <ScrollReveal delay={100}>
@@ -184,7 +168,7 @@ export default function StartProject() {
               {/* Content */}
               <div className="flex-1 text-center md:text-left relative z-10">
                 <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                  Expert AI Tools
+                  Expert AI Engineering
                 </h2>
                 <p className="text-sm font-medium tracking-[0.3em] text-blue-300/80 mb-4">
                   COMING SOON

@@ -47,34 +47,7 @@ export default function Home() {
         <div className="absolute top-[30%] right-[20%] w-[600px] h-[600px] bg-[#581c87] rounded-full mix-blend-screen filter blur-[150px] opacity-20 animate-blob-reverse" style={{ animationDelay: '1s' }} />
       </div>
 
-      {/* Navigation -> First element stagger: 100ms delay */}
-      <nav className="w-full max-w-7xl mx-auto px-6 py-6 flex justify-between items-center z-50 opacity-0 animate-fade-up-100">
-        <div className="font-bold text-2xl tracking-tighter cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-          NOCTURNE<span className="text-blue-500">.</span>
-        </div>
-        <div className="hidden md:flex gap-8 text-sm font-medium text-zinc-400">
-          <button 
-            onClick={(e) => {
-              e.preventDefault();
-              document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
-            }} 
-            className="hover:text-white transition-colors duration-300"
-          >
-            Services
-          </button>
-          <Link href="#work" className="hover:text-white transition-colors duration-300">Portfolio</Link>
-          <Link href="#about" className="hover:text-white transition-colors duration-300">About</Link>
-        </div>
-        <button
-          onClick={(e) => {
-            e.preventDefault();
-            document.getElementById("footer")?.scrollIntoView({ behavior: "smooth" });
-          }}
-          className="hidden md:block text-sm font-medium border border-zinc-800 px-4 py-2 rounded-full hover:bg-zinc-900 transition-colors duration-300"
-        >
-          Contact Us
-        </button>
-      </nav>
+      {/* Header is now global via layout.tsx */}
 
       {/* Main Hero Section */}
       <main className="min-h-screen flex flex-col items-center justify-center px-6 md:px-8 pb-32 relative overflow-hidden">
@@ -109,10 +82,10 @@ export default function Home() {
               Start a Project
             </Link>
             
-            <button className="w-full sm:w-auto px-8 py-4 rounded-full font-semibold text-white relative group overflow-hidden border border-blue-500/30 hover:border-blue-500/80 transition-all duration-300 ease-out">
+            <Link href="/portfolio" className="w-full sm:w-auto px-8 py-4 rounded-full font-semibold text-white relative group overflow-hidden border border-blue-500/30 hover:border-blue-500/80 transition-all duration-300 ease-out">
               <span className="relative z-10">Our Portfolio</span>
               <div className="absolute inset-0 bg-blue-500/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -120,10 +93,12 @@ export default function Home() {
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:100px_100px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_20%,transparent_100%)] pointer-events-none" />
       </main>
 
+      {/* Meet Your Digital Agent — split section */}
       <section className="w-full py-24 px-6 md:px-8 bg-black relative z-10">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-10 items-center">
+          {/* Left: Text */}
           <div className="flex flex-col items-start">
-            <p className="text-white/60 text-xs tracking-[0.25em] uppercase">
+            <p className="text-white text-xl md:text-2xl tracking-[0.2em] capitalize">
               Meet your digital agent
             </p>
             <h2 className="mt-4 text-6xl md:text-8xl font-bold tracking-tight text-transparent bg-clip-text bg-[linear-gradient(90deg,#3b82f6,#8b5cf6,#3b82f6,#8b5cf6)] bg-[length:300%_auto] animate-gradient-flow">
@@ -141,22 +116,59 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative w-full h-[360px] md:h-[460px] flex items-center justify-center">
+          {/* Right: Animated abstract orb */}
+          <div className="relative w-full h-[340px] md:h-[420px] flex items-center justify-center">
             <motion.div
               className="absolute inset-0"
-              animate={{ y: [0, -14, 0] }}
+              animate={{ y: [0, -12, 0] }}
               transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
             >
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_40%_35%,rgba(59,130,246,0.28),transparent_55%),radial-gradient(circle_at_60%_60%,rgba(139,92,246,0.22),transparent_55%)] blur-2xl" />
-              <div className="absolute inset-0 [mask-image:radial-gradient(circle_at_50%_50%,#000_35%,transparent_68%)]">
-                <motion.div
-                  className="absolute left-1/2 top-1/2 h-[300px] w-[300px] md:h-[380px] md:w-[380px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_30%_30%,rgba(59,130,246,0.55),rgba(0,0,0,0)_60%),radial-gradient(circle_at_70%_70%,rgba(139,92,246,0.45),rgba(0,0,0,0)_58%)] blur-2xl opacity-90"
-                  animate={{ scale: [1, 1.06, 1] }}
-                  transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" }}
-                />
-              </div>
+              <motion.div
+                className="absolute left-1/2 top-1/2 h-[260px] w-[260px] md:h-[320px] md:w-[320px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_30%_30%,rgba(59,130,246,0.55),rgba(0,0,0,0)_60%),radial-gradient(circle_at_70%_70%,rgba(139,92,246,0.45),rgba(0,0,0,0)_58%)] blur-2xl opacity-90"
+                animate={{ scale: [1, 1.05, 1] }}
+                transition={{ duration: 4.8, repeat: Infinity, ease: "easeInOut" }}
+              />
               <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60" />
             </motion.div>
+            <div className="absolute -bottom-12 left-0 right-0 flex justify-center">
+              <Link
+                href="/about"
+                className="px-5 py-2 rounded-full text-sm text-white bg-black border border-white/20 hover:border-white/40 transition-all duration-300 hover:shadow-[0_0_20px_rgba(139,92,246,0.25)]"
+              >
+                Read more about Nocturne
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full py-24 px-6 md:px-8 bg-black relative z-10">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="border border-white/10 bg-white/[0.02] rounded-3xl p-10 md:p-16 relative overflow-hidden">
+            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_60%_at_50%_0%,rgba(59,130,246,0.10),transparent_55%),radial-gradient(ellipse_60%_60%_at_50%_110%,rgba(139,92,246,0.08),transparent_55%)]" />
+            <div className="relative z-10">
+              <div className="flex items-center justify-center gap-3">
+                <span className="relative flex h-2 w-2">
+                  <span className="absolute inline-flex h-full w-full rounded-full bg-purple-500/40 opacity-70 animate-ping" />
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-400/80" />
+                </span>
+                <span className="text-white/60 text-xs tracking-widest">
+                  CURRENT INITIATIVE
+                </span>
+              </div>
+
+              <h3 className="mt-8 text-3xl md:text-5xl font-medium leading-tight text-white">
+                Nocturne is currently selecting a limited number of{" "}
+                <span className="text-transparent bg-clip-text bg-[linear-gradient(90deg,#3b82f6,#8b5cf6,#3b82f6,#8b5cf6)] bg-[length:300%_auto]">
+                  Beta Partners.
+                </span>
+              </h3>
+
+              <p className="mt-6 text-lg md:text-xl text-white/70 max-w-2xl mx-auto">
+                Growing businesses and institutions ready to leap into the next digital era.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -171,7 +183,7 @@ export default function Home() {
               Our Core Expertise
             </h2>
             <p className="text-zinc-400 text-lg text-center max-w-2xl mx-auto">
-              Precision-engineered solutions for web and mobile
+              Engineered solutions for web and mobile
             </p>
           </ScrollReveal>
 
@@ -191,7 +203,7 @@ export default function Home() {
                   Custom Web Development
                 </h3>
                 <p className="text-zinc-400 leading-relaxed text-sm flex-1">
-                  We craft highly scalable and lightning-fast web applications designed specifically for your unique business requirements. Our team leverages modern frameworks and robust architectures to ensure optimal performance.
+                  We craft highly scalable and fast web applications designed specifically for your unique business or institutions requirements
                 </p>
                 <div className="mt-5 flex items-center justify-end gap-1 text-zinc-500 text-sm group-hover:text-blue-400 transition-colors duration-300">
                   <span>View Details</span>
@@ -202,7 +214,7 @@ export default function Home() {
               </Link>
             </ScrollReveal>
 
-            {/* Card 2: App Engineering */}
+            {/* Card 2: App Building */}
             <ScrollReveal delay={120}>
               <Link href="/app-engineering" className="flex flex-col h-full group relative bg-white/5 backdrop-blur-md border border-purple-500/20 p-7 rounded-2xl hover:-translate-y-2 hover:border-blue-500/80 transition-all duration-300 ease-out cursor-pointer overflow-hidden">
                 <div className="absolute inset-0 bg-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
@@ -212,10 +224,10 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">
-                  Advanced App Engineering
+                  Advanced App Building
                 </h3>
                 <p className="text-zinc-400 leading-relaxed text-sm flex-1">
-                  Transform your mobile presence with sleek and native-like experiences engineered for seamless performance across all devices. We focus on intuitive interfaces and deep ecosystem integrations.
+                  Transform your mobile presence with sleek and native-like experiences engineered for seamless performance across all devices.
                 </p>
                 <div className="mt-5 flex items-center justify-end gap-1 text-zinc-500 text-sm group-hover:text-purple-400 transition-colors duration-300">
                   <span>View Details</span>
@@ -226,7 +238,7 @@ export default function Home() {
               </Link>
             </ScrollReveal>
 
-            {/* Card 3: Expert AI Tools */}
+            {/* Card 3: Expert AI Engineering */}
             <ScrollReveal delay={240}>
               <Link href="/ai-tools" className="flex flex-col h-full group relative bg-white/5 backdrop-blur-md border border-purple-500/20 p-7 rounded-2xl hover:-translate-y-2 hover:border-blue-500/80 transition-all duration-300 ease-out cursor-pointer overflow-hidden">
                 <div className="absolute inset-0 bg-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
@@ -237,10 +249,10 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">
-                  Expert AI Tools
+                  Expert AI Engineering
                 </h3>
                 <p className="text-zinc-400 leading-relaxed text-sm flex-1">
-                  Leverage cutting-edge machine learning and automation tools custom-built to optimize workflows and enhance your product&apos;s capabilities.
+                  Build learning and automation tools custom built to optimize workflows and enhance your product&apos;s capabilities.
                 </p>
                 <div className="mt-5 flex items-center justify-end gap-1 text-zinc-500 text-sm group-hover:text-blue-400 transition-colors duration-300">
                   <span>View Details</span>
@@ -280,66 +292,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Professional Footer */}
-      <footer id="footer" className="w-full bg-black border-t border-white/10 pt-20 pb-10 px-6 relative z-10">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
-          
-          {/* Column 1: Identity */}
-          <div className="flex flex-col space-y-4">
-            <Link href="/" className="font-bold text-3xl tracking-tighter cursor-pointer text-white">
-              NOCTURNE<span className="text-blue-500">.</span>
-            </Link>
-            <p className="text-zinc-400 max-w-xs leading-relaxed">
-              Build digital ecosystem for you.
-            </p>
-          </div>
-
-          {/* Column 2: Navigation */}
-          <div className="flex flex-col space-y-4">
-            <h4 className="text-white font-semibold text-lg mb-2">Explore</h4>
-            <button onClick={(e) => { e.preventDefault(); document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' }); }} className="text-zinc-500 hover:text-white transition-colors duration-300 text-left w-fit cursor-pointer">
-              Services
-            </button>
-            <Link href="#work" className="text-zinc-500 hover:text-white transition-colors duration-300 w-fit">
-              Portfolio
-            </Link>
-            <Link href="#about" className="text-zinc-500 hover:text-white transition-colors duration-300 w-fit">
-              About
-            </Link>
-          </div>
-
-          {/* Column 3: Contact Details */}
-          <div className="flex flex-col space-y-4">
-            <h4 className="text-white font-semibold text-lg mb-2">Contact</h4>
-            
-            <a href="mailto:raffiramdhan7@gmail.com" className="flex items-center gap-3 group w-fit">
-              <div className="w-10 h-10 rounded-full bg-blue-500/5 border border-blue-500/10 flex items-center justify-center group-hover:bg-blue-500/10 group-hover:border-blue-500/30 group-hover:shadow-[0_0_15px_rgba(59,130,246,0.3)] transition-all duration-300">
-                <svg className="w-5 h-5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-                </svg>
-              </div>
-              <span className="text-zinc-400 group-hover:text-white transition-colors duration-300">raffiramdhan7@gmail.com</span>
-            </a>
-
-            <a href="tel:+6281352920853" className="flex items-center gap-3 group w-fit">
-              <div className="w-10 h-10 rounded-full bg-purple-500/5 border border-purple-500/10 flex items-center justify-center group-hover:bg-purple-500/10 group-hover:border-purple-500/30 group-hover:shadow-[0_0_15px_rgba(139,92,246,0.3)] transition-all duration-300">
-                <svg className="w-5 h-5 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-2.896-1.596-5.48-4.18-7.077-7.077l1.293-.97c.362-.271.527-.733.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
-                </svg>
-              </div>
-              <span className="text-zinc-400 group-hover:text-white transition-colors duration-300">+62 813 5292 0853</span>
-            </a>
-
-          </div>
-        </div>
-
-        {/* Bottom Bar Container */}
-        <div className="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col items-center">
-          <p className="text-zinc-500 text-sm md:text-base text-center">
-            © 2026 Nocturne Indonesia. All rights reserved.
-          </p>
-        </div>
-      </footer>
+      {/* Footer is now global via layout.tsx */}
 
     </div>
   );
