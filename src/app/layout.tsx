@@ -11,6 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://nocturneindonesia.com'),
   title: "Nocturne Indonesia | Jasa Bikin Website & Digital Ecosystem",
   description:
     "Nocturne Indonesia adalah agensi creative engineering. Kami melayani jasa pembuatan website, app building, dan AI engineering untuk transformasi digital bisnis Anda. Buat website profesional sekarang.",
@@ -29,13 +30,29 @@ export const metadata: Metadata = {
     title: "Nocturne Indonesia | Jasa Bikin Website & Digital Ecosystem",
     description:
       "Nocturne Indonesia adalah agensi creative engineering. Kami melayani jasa pembuatan website, app building, dan AI engineering untuk transformasi digital bisnis Anda.",
+    url: "https://nocturneindonesia.com",
     type: "website",
     siteName: "Nocturne Indonesia",
+    images: [
+      {
+        url: "https://nocturneindonesia.com/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Nocturne Indonesia - Creative Engineering Agency",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nocturne Indonesia | Jasa Bikin Website & Digital Ecosystem",
+    description: "Nocturne Indonesia adalah agensi creative engineering. Kami melayani jasa pembuatan website, app building, dan AI engineering.",
+    images: ["https://nocturneindonesia.com/og-image.png"],
   },
   verification: {
     google: "google0ab1176c12c8e1f3.html",
   },
 };
+
 
 export default function RootLayout({
   children,

@@ -7,9 +7,10 @@ export default function JsonLd() {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "Nocturne Indonesia",
-    "image": "https://nocturne.id/logo.png", // Replace with actual logo URL if available
+    "image": "https://nocturneindonesia.com/logo.png",
     "description": "Nocturne Indonesia adalah agensi creative engineering. Kami melayani jasa pembuatan website, app building, dan AI engineering.",
-    "url": "https://nocturne.id", // Replace with actual domain
+    "url": "https://nocturneindonesia.com",
+
     "telephone": "+6281352920853",
     "address": {
       "@type": "PostalAddress",
