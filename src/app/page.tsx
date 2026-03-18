@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useRef, useEffect, useState } from "react";
 import ScrollReveal from "@/components/ScrollReveal";
+import HeroScene from "@/components/HeroScene";
+import { motion } from "framer-motion";
 
 /**
  * Hook: fires a callback whenever the observed element crosses the viewport
@@ -60,17 +62,25 @@ export default function Home() {
           >
             Services
           </button>
-          <Link href="#work" className="hover:text-white transition-colors duration-300">Work</Link>
+          <Link href="#work" className="hover:text-white transition-colors duration-300">Portfolio</Link>
           <Link href="#about" className="hover:text-white transition-colors duration-300">About</Link>
         </div>
-        <button className="hidden md:block text-sm font-medium border border-zinc-800 px-4 py-2 rounded-full hover:bg-zinc-900 transition-colors duration-300">
+        <button
+          onClick={(e) => {
+            e.preventDefault();
+            document.getElementById("footer")?.scrollIntoView({ behavior: "smooth" });
+          }}
+          className="hidden md:block text-sm font-medium border border-zinc-800 px-4 py-2 rounded-full hover:bg-zinc-900 transition-colors duration-300"
+        >
           Contact Us
         </button>
       </nav>
 
       {/* Main Hero Section */}
       <main className="min-h-screen flex flex-col items-center justify-center px-6 md:px-8 pb-32 relative overflow-hidden">
-        <div className="z-10 text-center max-w-4xl w-full">
+        <HeroScene />
+
+        <div className="relative z-10 text-center max-w-4xl w-full">
           {/* Headline -> Second element stagger: 300ms delay */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-6 opacity-0 animate-fade-up-300">
             We Code <br className="md:hidden" />
@@ -82,9 +92,9 @@ export default function Home() {
                 animationPlayState: isHeadlineVisible ? 'running' : 'paused',
               }}
             >
-              The Future.
+              Your Future
             </span> <br />
-            In The Dark.
+            In The Dark
           </h1>
 
           {/* Sub-headline -> Third element stagger: 500ms delay */}
@@ -109,6 +119,47 @@ export default function Home() {
         {/* Decorative subtle grid or lines */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:100px_100px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_20%,transparent_100%)] pointer-events-none" />
       </main>
+
+      <section className="w-full py-24 px-6 md:px-8 bg-black relative z-10">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-10 items-center">
+          <div className="flex flex-col items-start">
+            <p className="text-white/60 text-xs tracking-[0.25em] uppercase">
+              Meet your digital agent
+            </p>
+            <h2 className="mt-4 text-6xl md:text-8xl font-bold tracking-tight text-transparent bg-clip-text bg-[linear-gradient(90deg,#3b82f6,#8b5cf6,#3b82f6,#8b5cf6)] bg-[length:300%_auto] animate-gradient-flow">
+              Nocturne!
+            </h2>
+            <p className="mt-6 text-xl md:text-2xl text-white/85 leading-relaxed max-w-xl">
+              Build premium digital ecosystem for everyone
+            </p>
+            <div className="mt-8 inline-flex items-center gap-4 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm px-6 py-3">
+              <span className="text-sm text-white/90">Accessible</span>
+              <span className="text-white/30">•</span>
+              <span className="text-sm text-white/90">Helpful</span>
+              <span className="text-white/30">•</span>
+              <span className="text-sm text-white/90">Resilient</span>
+            </div>
+          </div>
+
+          <div className="relative w-full h-[360px] md:h-[460px] flex items-center justify-center">
+            <motion.div
+              className="absolute inset-0"
+              animate={{ y: [0, -14, 0] }}
+              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+            >
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_40%_35%,rgba(59,130,246,0.28),transparent_55%),radial-gradient(circle_at_60%_60%,rgba(139,92,246,0.22),transparent_55%)] blur-2xl" />
+              <div className="absolute inset-0 [mask-image:radial-gradient(circle_at_50%_50%,#000_35%,transparent_68%)]">
+                <motion.div
+                  className="absolute left-1/2 top-1/2 h-[300px] w-[300px] md:h-[380px] md:w-[380px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_30%_30%,rgba(59,130,246,0.55),rgba(0,0,0,0)_60%),radial-gradient(circle_at_70%_70%,rgba(139,92,246,0.45),rgba(0,0,0,0)_58%)] blur-2xl opacity-90"
+                  animate={{ scale: [1, 1.06, 1] }}
+                  transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" }}
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60" />
+            </motion.div>
+          </div>
+        </div>
+      </section>
 
       {/* Services Section */}
       <section id="services" className="w-full py-24 px-6 md:px-8 bg-black relative z-10">
@@ -230,7 +281,7 @@ export default function Home() {
       </section>
 
       {/* Professional Footer */}
-      <footer className="w-full bg-black border-t border-white/10 pt-20 pb-10 px-6 relative z-10">
+      <footer id="footer" className="w-full bg-black border-t border-white/10 pt-20 pb-10 px-6 relative z-10">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
           
           {/* Column 1: Identity */}
@@ -239,7 +290,7 @@ export default function Home() {
               NOCTURNE<span className="text-blue-500">.</span>
             </Link>
             <p className="text-zinc-400 max-w-xs leading-relaxed">
-              Engineering premium digital experiences in the dark.
+              Build digital ecosystem for you.
             </p>
           </div>
 
@@ -249,17 +300,17 @@ export default function Home() {
             <button onClick={(e) => { e.preventDefault(); document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' }); }} className="text-zinc-500 hover:text-white transition-colors duration-300 text-left w-fit cursor-pointer">
               Services
             </button>
-            <Link href="#projects" className="text-zinc-500 hover:text-white transition-colors duration-300 w-fit">
-              Projects
+            <Link href="#work" className="text-zinc-500 hover:text-white transition-colors duration-300 w-fit">
+              Portfolio
             </Link>
-            <Link href="#privacy-policy" className="text-zinc-500 hover:text-white transition-colors duration-300 w-fit">
-              Privacy Policy
+            <Link href="#about" className="text-zinc-500 hover:text-white transition-colors duration-300 w-fit">
+              About
             </Link>
           </div>
 
           {/* Column 3: Contact Details */}
           <div className="flex flex-col space-y-4">
-            <h4 className="text-white font-semibold text-lg mb-2">Connect</h4>
+            <h4 className="text-white font-semibold text-lg mb-2">Contact</h4>
             
             <a href="mailto:raffiramdhan7@gmail.com" className="flex items-center gap-3 group w-fit">
               <div className="w-10 h-10 rounded-full bg-blue-500/5 border border-blue-500/10 flex items-center justify-center group-hover:bg-blue-500/10 group-hover:border-blue-500/30 group-hover:shadow-[0_0_15px_rgba(59,130,246,0.3)] transition-all duration-300">
@@ -285,7 +336,7 @@ export default function Home() {
         {/* Bottom Bar Container */}
         <div className="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col items-center">
           <p className="text-zinc-500 text-sm md:text-base text-center">
-            © 2026 Nocturne Web Development. All rights reserved.
+            © 2026 Nocturne Indonesia. All rights reserved.
           </p>
         </div>
       </footer>
