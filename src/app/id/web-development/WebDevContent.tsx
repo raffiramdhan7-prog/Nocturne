@@ -212,9 +212,9 @@ export default function WebDevelopmentPricing() {
                     ))}
                   </ul>
 
-                  <button className="w-full py-3 px-6 rounded-full font-semibold text-white border border-blue-500/50 hover:bg-blue-500/10 transition-colors duration-300 text-sm">
+                  <a href="https://wa.me/628135141357?text=Halo%20kak,%20aku%20tertarik%20dengan%20Paket%20Premium" target="_blank" rel="noopener noreferrer" className="block text-center relative z-10 w-full py-3 px-6 rounded-full font-semibold text-white bg-gradient-to-r from-[#3b82f6] to-[#8b5cf6] hover:shadow-[0_0_30px_rgba(59,130,246,0.6)] transition-all duration-300 transform hover:-translate-y-1 text-sm">
                     Pilih Premium
-                  </button>
+                  </a>
                 </div>
               </ScrollReveal>
 
