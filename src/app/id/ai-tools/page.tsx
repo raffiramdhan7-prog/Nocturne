@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Expert AI Engineering | Nocturne Indonesia",
+  title: "Pengembangan Kecerdasan Buatan | Nocturne Indonesia",
   description: "Bangun sistem kecerdasan buatan custom untuk optimasi alur kerja dan peningkatan kapabilitas produk Anda. Segera hadir di Nocturne Indonesia.",
 };
 
@@ -29,30 +29,30 @@ export default function AIToolsComingSoon() {
 
         {/* Headline */}
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 opacity-0 animate-fade-up-300 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">
-          Expert AI Engineering
+          Pengembangan Kecerdasan Buatan
         </h1>
 
         {/* Sub-headline */}
         <h2 className="text-xl md:text-2xl font-medium tracking-[0.3em] text-white/80 mb-8 opacity-0 animate-fade-up-500">
-          COMING SOON
+          SEGERA HADIR
         </h2>
 
         {/* Description */}
         <p className="text-gray-400 text-lg md:text-xl leading-relaxed max-w-md mx-auto mb-12 opacity-0 animate-fade-up-700">
-          We are architecting something intelligent in the dark.
-          Our cutting-edge AI automation tools will launch shortly.
+          Kami sedang merancang sesuatu yang cerdas dalam gelap.
+          Alat otomasi AI mutakhir kami akan segera diluncurkan.
         </p>
 
         {/* Return Button */}
         <div className="opacity-0 animate-fade-up-700" style={{ animationDelay: '900ms' }}>
           <Link
-            href="/"
+            href="/id"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-semibold text-white border border-purple-500/30 bg-white/5 backdrop-blur-md hover:bg-white/10 hover:border-blue-500/50 hover:-translate-y-1 transition-all duration-300 group"
           >
             <svg className="w-5 h-5 text-blue-400 group-hover:-translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
             </svg>
-            Return to Home
+            Kembali ke Beranda
           </Link>
         </div>
 

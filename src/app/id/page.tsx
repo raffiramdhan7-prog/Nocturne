@@ -77,23 +77,23 @@ export default function Home() {
             >
               Your Future
             </span> <br />
-            In The Dark
+            In The Dark.
           </h1>
 
           {/* Sub-headline -> Third element stagger: 500ms delay */}
           <p className="mt-8 mb-12 text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto leading-relaxed opacity-0 animate-fade-up-500">
-            Nocturne transforms digital visions into reality with uncompromising performance.
+            Nocturne mentransformasi visi anda menjadi kenyataan dengan performa yang mengagumkan
           </p>
 
           {/* Call-to-Action Buttons -> Fourth element stagger: 700ms delay */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 opacity-0 animate-fade-up-700">
             {/* Enhanced Button Pulse on Primary Button — routes to funnel */}
-            <Link href="/start-project" className="w-full sm:w-auto px-8 py-4 rounded-full font-semibold text-white bg-gradient-to-r from-[#3b82f6] to-[#8b5cf6] animate-pulse-glow hover:shadow-[0_0_40px_rgba(59,130,246,0.6)] transition-all duration-300 ease-out transform hover:-translate-y-1 text-center">
-              Start a Project
+            <Link href="/id/start-project" className="w-full sm:w-auto px-8 py-4 rounded-full font-semibold text-white bg-gradient-to-r from-[#3b82f6] to-[#8b5cf6] animate-pulse-glow hover:shadow-[0_0_40px_rgba(59,130,246,0.6)] transition-all duration-300 ease-out transform hover:-translate-y-1 text-center">
+              Mulai
             </Link>
 
-            <Link href="/portfolio" className="w-full sm:w-auto px-8 py-4 rounded-full font-semibold text-white relative group overflow-hidden border border-blue-500/30 hover:border-blue-500/80 transition-all duration-300 ease-out">
-              <span className="relative z-10">Our Portfolio</span>
+            <Link href="/id/portfolio" className="w-full sm:w-auto px-8 py-4 rounded-full font-semibold text-white relative group overflow-hidden border border-blue-500/30 hover:border-blue-500/80 transition-all duration-300 ease-out">
+              <span className="relative z-10">Portofolio Kami</span>
               <div className="absolute inset-0 bg-blue-500/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />
             </Link>
           </div>
@@ -109,20 +109,20 @@ export default function Home() {
           {/* Left: Text */}
           <div className="flex flex-col items-start">
             <p className="text-white text-xl md:text-2xl tracking-[0.2em] capitalize">
-              Meet your digital agent
+              Kenali agen digital Anda
             </p>
             <h2 className="mt-4 text-6xl md:text-8xl font-bold tracking-tight text-transparent bg-clip-text bg-[linear-gradient(90deg,#3b82f6,#8b5cf6,#3b82f6,#8b5cf6)] bg-[length:300%_auto] animate-gradient-flow">
               Nocturne!
             </h2>
             <p className="mt-6 text-xl md:text-2xl text-white/85 leading-relaxed max-w-xl">
-              Build premium digital ecosystem for everyone
+              Membangun ekosistem digital untuk semua orang
             </p>
             <div className="mt-8 inline-flex items-center gap-4 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm px-6 py-3">
-              <span className="text-sm text-white/90">Accessible</span>
+              <span className="text-sm text-white/90">Aksesibel</span>
               <span className="text-white/30">•</span>
-              <span className="text-sm text-white/90">Helpful</span>
+              <span className="text-sm text-white/90">Andal</span>
               <span className="text-white/30">•</span>
-              <span className="text-sm text-white/90">Resilient</span>
+              <span className="text-sm text-white/90">Tangguh</span>
             </div>
           </div>
 
@@ -145,10 +145,10 @@ export default function Home() {
             </motion.div>
             <div className="absolute -bottom-12 left-0 right-0 flex justify-center">
               <Link
-                href="/about"
+                href="/id/about"
                 className="px-5 py-2 rounded-full text-sm text-white bg-black border border-white/20 hover:border-white/40 transition-all duration-300 hover:shadow-[0_0_20px_rgba(139,92,246,0.25)]"
               >
-                Read more
+                Baca selengkapnya
               </Link>
             </div>
           </div>
@@ -166,19 +166,19 @@ export default function Home() {
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-400/80" />
                 </span>
                 <span className="text-white/60 text-xs tracking-widest">
-                  CURRENT INITIATIVE
+                  FOKUS KAMI SAAT INI
                 </span>
               </div>
 
               <h3 className="mt-8 text-3xl md:text-5xl font-medium leading-tight text-white">
-                Nocturne is currently selecting a limited number of{" "}
+                Saat ini kami sedang bekerja sama dengan mitra awal untuk membangun fondasi{" "}
                 <span className="text-transparent bg-clip-text bg-[linear-gradient(90deg,#3b82f6,#8b5cf6,#3b82f6,#8b5cf6)] bg-[length:300%_auto]">
-                  Beta Partners.
+                  ekosistem digital masa depan.
                 </span>
               </h3>
 
               <p className="mt-6 text-lg md:text-xl text-white/70 max-w-2xl mx-auto">
-                Growing businesses and institutions ready to leap into the next digital era.
+                Inisiatif ini dirancang bagi bisnis dan institusi berkembang yang siap bertransformasi dan berkompetisi di era digital baru.
               </p>
             </div>
           </div>
@@ -192,10 +192,10 @@ export default function Home() {
           {/* Section Headers */}
           <ScrollReveal className="text-center mb-16 w-full">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 text-center">
-              Our Core Expertise
+              Keahlian Utama Kami
             </h2>
             <p className="text-zinc-400 text-lg text-center max-w-2xl mx-auto">
-              Engineered solutions for web and mobile
+              Solusi terbaik untuk web dan seluler
             </p>
           </ScrollReveal>
 
@@ -204,7 +204,7 @@ export default function Home() {
 
             {/* Card 1: Web Development */}
             <ScrollReveal delay={0}>
-              <Link href="/web-development" className="flex flex-col h-full group relative bg-white/5 backdrop-blur-md border border-purple-500/20 p-7 rounded-2xl hover:-translate-y-2 hover:border-blue-500/80 transition-all duration-300 ease-out cursor-pointer overflow-hidden">
+              <Link href="/id/web-development" className="flex flex-col h-full group relative bg-white/5 backdrop-blur-md border border-purple-500/20 p-7 rounded-2xl hover:-translate-y-2 hover:border-blue-500/80 transition-all duration-300 ease-out cursor-pointer overflow-hidden">
                 <div className="absolute inset-0 bg-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
                 <div className="w-14 h-14 rounded-lg bg-blue-500/10 flex items-center justify-center mb-6 border border-blue-500/20 shrink-0">
                   <svg className="w-8 h-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -212,13 +212,13 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">
-                  Custom Web Development
+                  Pengembangan Web Kustom
                 </h3>
                 <p className="text-zinc-400 leading-relaxed text-sm flex-1">
-                  We craft highly scalable and fast web applications designed specifically for your unique business or institutions requirements
+                  Kami merancang aplikasi web dengan skalabilitas tinggi dan performa Optimal yang dirancang secara khusus untuk memenuhi kebutuhan unik bisnis atau institusi Anda.
                 </p>
                 <div className="mt-5 flex items-center justify-end gap-1 text-zinc-500 text-sm group-hover:text-blue-400 transition-colors duration-300">
-                  <span>View Details</span>
+                  <span>Lihat Detail</span>
                   <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                   </svg>
@@ -228,7 +228,7 @@ export default function Home() {
 
             {/* Card 2: App Building */}
             <ScrollReveal delay={120}>
-              <Link href="/app-engineering" className="flex flex-col h-full group relative bg-white/5 backdrop-blur-md border border-purple-500/20 p-7 rounded-2xl hover:-translate-y-2 hover:border-blue-500/80 transition-all duration-300 ease-out cursor-pointer overflow-hidden">
+              <Link href="/id/app-engineering" className="flex flex-col h-full group relative bg-white/5 backdrop-blur-md border border-purple-500/20 p-7 rounded-2xl hover:-translate-y-2 hover:border-blue-500/80 transition-all duration-300 ease-out cursor-pointer overflow-hidden">
                 <div className="absolute inset-0 bg-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
                 <div className="w-14 h-14 rounded-lg bg-purple-500/10 flex items-center justify-center mb-6 border border-purple-500/20 shrink-0">
                   <svg className="w-8 h-8 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -236,13 +236,14 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">
-                  Advanced App Building
+                  Pengembangan Aplikasi Mutakhir
                 </h3>
                 <p className="text-zinc-400 leading-relaxed text-sm flex-1">
-                  Transform your mobile presence with sleek and native-like experiences engineered for seamless performance across all devices.
+                  Transformasikan kehadiran digital Anda melalui pengalaman seluler yang elegan dan menyerupai aplikasi bawaan dengan performa yang konsisten dan mulus di berbagai perangkat.
+
                 </p>
                 <div className="mt-5 flex items-center justify-end gap-1 text-zinc-500 text-sm group-hover:text-purple-400 transition-colors duration-300">
-                  <span>View Details</span>
+                  <span>Lihat Detail</span>
                   <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                   </svg>
@@ -252,7 +253,7 @@ export default function Home() {
 
             {/* Card 3: Expert AI Engineering */}
             <ScrollReveal delay={240}>
-              <Link href="/ai-tools" className="flex flex-col h-full group relative bg-white/5 backdrop-blur-md border border-purple-500/20 p-7 rounded-2xl hover:-translate-y-2 hover:border-blue-500/80 transition-all duration-300 ease-out cursor-pointer overflow-hidden">
+              <Link href="/id/ai-tools" className="flex flex-col h-full group relative bg-white/5 backdrop-blur-md border border-purple-500/20 p-7 rounded-2xl hover:-translate-y-2 hover:border-blue-500/80 transition-all duration-300 ease-out cursor-pointer overflow-hidden">
                 <div className="absolute inset-0 bg-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
                 <div className="w-14 h-14 rounded-lg bg-blue-500/10 flex items-center justify-center mb-6 border border-blue-500/20 shrink-0">
                   <svg className="w-8 h-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -261,13 +262,13 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">
-                  Expert AI Engineering
+                  Pengembangan Kecerdasan Buatan
                 </h3>
                 <p className="text-zinc-400 leading-relaxed text-sm flex-1">
-                  Build learning and automation tools custom built to optimize workflows and enhance your product&apos;s capabilities.
+                  Bangun solusi otomasi dan alat Machine Learning yang dirancang khusus untuk mengoptimalkan alur kerja serta meningkatkan kapabilitas dan nilai produk.
                 </p>
                 <div className="mt-5 flex items-center justify-end gap-1 text-zinc-500 text-sm group-hover:text-blue-400 transition-colors duration-300">
-                  <span>View Details</span>
+                  <span>Lihat Detail</span>
                   <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                   </svg>
@@ -284,7 +285,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.01)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.01)_1px,transparent_1px)] bg-[size:50px_50px] pointer-events-none" />
         <div className="max-w-4xl mx-auto flex flex-col items-center text-center relative z-10">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-10">
-            Ready to build your vision with Nocturne?
+            Siap membangun visi Anda bersama Nocturne?
           </h2>
 
           <ContactForm />

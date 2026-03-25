@@ -8,10 +8,10 @@ export default function StartProject() {
       {/* Page Header */}
       <div className="text-center pt-12 pb-6 px-6 opacity-0 animate-fade-up-100">
         <h1 className="text-4xl md:text-6xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
-          Start a Project
+          Mulai Proyek
         </h1>
         <p className="text-zinc-400 text-lg max-w-xl mx-auto">
-          Choose the service that fits your vision.
+          Pilih layanan yang sesuai dengan visi Anda.
         </p>
       </div>
 
@@ -23,10 +23,10 @@ export default function StartProject() {
           {/* Section label */}
           <div className="text-center mb-10 opacity-0 animate-fade-up-300">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">
-              Custom Web Development
+              Pengembangan Web Kustom
             </h2>
             <p className="text-zinc-400 text-base">
-              Select the perfect tier for your digital presence.
+              Pilih tingkatan yang sempurna untuk kehadiran digital Anda.
             </p>
           </div>
 
@@ -36,17 +36,17 @@ export default function StartProject() {
             {/* Card 1: Premium */}
             <div className="relative bg-white/5 backdrop-blur-md border border-purple-500/20 p-8 rounded-3xl flex flex-col hover:border-blue-500/40 transition-all duration-300 group">
               <div className="absolute inset-0 bg-blue-500/3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-3xl pointer-events-none" />
-              <h3 className="text-xl font-bold mb-1 text-white">Premium Package</h3>
+              <h3 className="text-xl font-bold mb-1 text-white">Paket Premium</h3>
               <div className="mb-6">
                 <span className="text-4xl font-extrabold text-white tracking-tight">Rp 300.000</span>
               </div>
               <ul className="space-y-3 mb-7 flex-1">
                 {[
-                  'Landing page (Up to 10 pages)',
-                  'Basic SEO',
-                  'Free basic domain',
-                  'Free entry hosting (1 GB)',
-                  'Free 5 images editing & 1 logo',
+                  'Landing page (Hingga 10 halaman)',
+                  'SEO Dasar',
+                  'Gratis domain dasar',
+                  'Gratis hosting entry (1 GB)',
+                  'Gratis edit 5 gambar & 1 logo',
                 ].map((f, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <svg className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -56,8 +56,8 @@ export default function StartProject() {
                   </li>
                 ))}
               </ul>
-              <a href="https://wa.me/628135141357?text=Hello%20Nocturne,%20I%20am%20interested%20in%20the%20Premium%20Package." target="_blank" rel="noopener noreferrer" className="block text-center w-full py-3 px-6 rounded-full font-semibold text-white border border-blue-500/50 hover:bg-blue-500/10 transition-colors duration-300 text-sm">
-                Choose Premium
+              <a href="https://wa.me/628135141357?text=Halo%20kak,%20aku%20tertarik%20dengan%20Paket%20Premium." target="_blank" rel="noopener noreferrer" className="block text-center w-full py-3 px-6 rounded-full font-semibold text-white border border-blue-500/50 hover:bg-blue-500/10 transition-colors duration-300 text-sm">
+                Pilih Premium
               </a>
             </div>
 
@@ -65,19 +65,19 @@ export default function StartProject() {
             <div className="relative bg-white/5 backdrop-blur-md border border-blue-500/50 p-8 rounded-3xl flex flex-col md:scale-105 shadow-[0_0_40px_-10px_rgba(59,130,246,0.3)] group">
               <div className="absolute inset-0 bg-blue-500/5 rounded-3xl pointer-events-none" />
               <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
-                Recommended
+                Rekomendasi
               </div>
-              <h3 className="text-xl font-bold mb-1 text-white">Exclusive Package</h3>
+              <h3 className="text-xl font-bold mb-1 text-white">Paket Eksklusif</h3>
               <div className="mb-6">
                 <span className="text-4xl font-extrabold text-white tracking-tight">Rp 375.000</span>
               </div>
               <ul className="space-y-3 mb-7 flex-1 relative z-10">
                 {[
-                  'Fullstack Website (Unlimited pages)',
-                  'Advanced SEO',
-                  'Free popular domain (.com, .net, .id)',
-                  'Free small unlimited hosting',
-                  'Free 10 images editing & 1 logo',
+                  'Website Fullstack (Halaman Tidak Terbatas)',
+                  'SEO Lanjutan',
+                  'Gratis domain populer (.com, .net, .id)',
+                  'Gratis hosting tanpa batas (small)',
+                  'Gratis edit 10 gambar & 1 logo',
                 ].map((f, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <svg className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -87,8 +87,8 @@ export default function StartProject() {
                   </li>
                 ))}
               </ul>
-              <a href="https://wa.me/628135141357?text=Hello%20Nocturne,%20I%20am%20interested%20in%20the%20Exclusive%20Package." target="_blank" rel="noopener noreferrer" className="block text-center relative z-10 w-full py-3 px-6 rounded-full font-semibold text-white bg-gradient-to-r from-[#3b82f6] to-[#8b5cf6] hover:shadow-[0_0_30px_rgba(59,130,246,0.6)] transition-all duration-300 transform hover:-translate-y-1 text-sm">
-                Choose Exclusive
+              <a href="https://wa.me/628135141357?text=Halo%20kak,%20aku%20tertarik%20dengan%20Paket%20Exclusive." target="_blank" rel="noopener noreferrer" className="block text-center relative z-10 w-full py-3 px-6 rounded-full font-semibold text-white bg-gradient-to-r from-[#3b82f6] to-[#8b5cf6] hover:shadow-[0_0_30px_rgba(59,130,246,0.6)] transition-all duration-300 transform hover:-translate-y-1 text-sm">
+                Pilih Eksklusif
               </a>
             </div>
 
@@ -123,13 +123,13 @@ export default function StartProject() {
               {/* Content */}
               <div className="flex-1 text-center md:text-left relative z-10">
                 <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                  Advanced App Building
+                  Pengembangan Aplikasi Mutakhir
                 </h2>
                 <p className="text-sm font-medium tracking-[0.3em] text-purple-300/80 mb-4">
-                  COMING SOON
+                  SEGERA HADIR
                 </p>
                 <p className="text-zinc-400 leading-relaxed text-sm md:text-base max-w-lg">
-                  Transforming mobile presence with sleek, native-like experiences engineered for seamless performance.
+                  Mentransformasi kehadiran mobile Anda dengan pengalaman yang lebih baik seperti aplikasi bawaan.
                 </p>
               </div>
 
@@ -137,7 +137,7 @@ export default function StartProject() {
               <div className="shrink-0 relative z-10">
                 <span className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-purple-500/30 bg-purple-500/10 text-purple-300 text-sm font-medium">
                   <span className="w-2 h-2 rounded-full bg-purple-400 animate-pulse" />
-                  In Development
+                  Dalam Pengembangan
                 </span>
               </div>
             </div>
@@ -168,13 +168,13 @@ export default function StartProject() {
               {/* Content */}
               <div className="flex-1 text-center md:text-left relative z-10">
                 <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                  Expert AI Engineering
+                  Pengembangan Kecerdasan Buatan
                 </h2>
                 <p className="text-sm font-medium tracking-[0.3em] text-blue-300/80 mb-4">
-                  COMING SOON
+                  SEGERA HADIR
                 </p>
                 <p className="text-zinc-400 leading-relaxed text-sm md:text-base max-w-lg">
-                  Cutting-edge machine learning tools to optimize your workflows and elevate your product&apos;s capabilities.
+                  Alat machine learning mutakhir untuk mengoptimalkan alur kerja dan meningkatkan kapabilitas produk Anda.
                 </p>
               </div>
 
@@ -182,7 +182,7 @@ export default function StartProject() {
               <div className="shrink-0 relative z-10">
                 <span className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-300 text-sm font-medium">
                   <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
-                  In Development
+                  Dalam Pengembangan
                 </span>
               </div>
             </div>

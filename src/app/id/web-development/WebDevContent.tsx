@@ -14,19 +14,19 @@ export default function WebDevelopmentPricing() {
   const faqItems = useMemo<FaqItem[]>(
     () => [
       {
-        question: "What is Hosting?",
+        question: "Apa itu Hosting?",
         answer:
-          "Web hosting is a service that provides the storage space and infrastructure required for a website to be accessible on the internet 24 hours",
+          "Web hosting adalah layanan yang menyediakan ruang penyimpanan dan infrastruktur yang diperlukan agar situs web dapat diakses di internet 24 jam.",
       },
       {
-        question: "What is Domain?",
+        question: "Apa itu Domain?",
         answer:
-          "A Domain Name is the unique, readable address used to access a website. It translates complex IP addresses into simple names that people can remember.",
+          "Domain adalah alamat unik website Anda di internet sekaligus representasi identitas digital brand Anda. Domain memudahkan pelanggan menemukan Anda, menggantikan alamat IP yang kompleks dengan nama yang sederhana dan mudah diingat.",
       },
       {
-        question: "What is SEO?",
+        question: "Apa itu SEO?",
         answer:
-          "Search Engine Optimization (SEO) is the process of improving your website to increase its visibility when people search for products or services related to your business in search engines.",
+          "Search Engine Optimization (SEO) adalah proses untuk meningkatkan situs web Anda untuk meningkatkan visibilitasnya ketika orang mencari produk atau layanan yang berkaitan dengan bisnis Anda di mesin pencari.",
       },
     ],
     []
@@ -43,44 +43,44 @@ export default function WebDevelopmentPricing() {
           <div className="w-full max-w-7xl mx-auto flex flex-col gap-8">
             <div className="text-center">
               <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-transparent bg-clip-text bg-[linear-gradient(90deg,#3b82f6,#8b5cf6,#3b82f6,#8b5cf6)] bg-[length:300%_auto] animate-gradient-flow">
-                Custom Web Development
+                Pengembangan Web Kustom
               </h1>
               <p className="mt-2 text-xl md:text-2xl text-white/90 leading-relaxed">
-                Make your project online.
+                Wujudkan visi Anda ke dalam dunia digital.
               </p>
             </div>
 
             <div className="w-full">
               <h2 className="text-2xl md:text-3xl font-semibold text-white mb-6 text-center md:text-left">
-                Why Develop a Website?
+                Mengapa Perlu Membuat Website?
               </h2>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
                 <div className="space-y-6">
                   <div>
                     <h3 className="text-xl font-semibold text-white mb-2">
-                      Expand Your Trust.
+                      Menambah Kredibilitas
                     </h3>
                     <p className="text-white/70 text-sm md:text-base leading-relaxed">
-                      In today’s world, before someone visits your office or buys your product, they will visit you on the internet first. We help you build a digital face that makes people feel safe and confident with you.
+                      Di era yang serba digital ini, sebelum seseorang mengunjungi kantor Anda atau membeli produk Anda, mereka akan mencari Anda melalui platform digital terlebih dahulu. Kami membantu Anda membangun "etalase" digital premium yang membuat orang merasa aman dan percaya dengan brand Anda.
                     </p>
                   </div>
 
                   <div>
                     <h3 className="text-xl font-semibold text-white mb-2">
-                      Seamless Employee.
+                      Karyawan 24 Jam
                     </h3>
                     <p className="text-white/70 text-sm md:text-base leading-relaxed">
-                      A website is an employee that never sleeps, never takes a holiday, and never complains. It explains your profile, shows your products, and answers customer questions 24 hours.
+                      Website adalah anggota tim Anda yang paling berdedikasi. Ia tidak pernah tidur dan juga tidak pernah libur. Website akan menjelaskan profil Anda, memamerkan produk Anda, dan menjawab pertanyaan pelanggan 24 jam penuh.
                     </p>
                   </div>
 
                   <div>
                     <h3 className="text-xl font-semibold text-white mb-2">
-                      Cheaper than any ever ads.
+                      Investasi Jangka Panjang Terbaik
                     </h3>
                     <p className="text-white/70 text-sm md:text-base leading-relaxed">
-                      A high end website is a one time investment that works forever. It is more effective and affordable than any billboard or social media ad.
+                      Website premium adalah investasi satu kali yang akan bekerja tanpa lelah untuk Anda selamanya. Jauh lebih hemat biaya dan permanen dibandingkan iklan media sosial yang berlalu begitu saja atau iklan baliho tradisional.
                     </p>
                   </div>
                 </div>
@@ -175,14 +175,14 @@ export default function WebDevelopmentPricing() {
           <div className="max-w-6xl mx-auto">
             <ScrollReveal className="text-center mb-14">
               <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-                Web Development Packages
+                Paket Pengembangan Web
               </h2>
             </ScrollReveal>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-6 w-full max-w-4xl mx-auto">
               <ScrollReveal delay={0} className="flex flex-col">
                 <div className="relative bg-white/5 backdrop-blur-md border border-purple-500/20 p-7 rounded-3xl flex flex-col hover:border-blue-500/40 transition-colors duration-300 h-full">
-                  <h3 className="text-xl font-bold mb-1">Premium Package</h3>
+                  <h3 className="text-xl font-bold mb-1">Paket Premium</h3>
                   <div className="mb-5">
                     <span className="text-4xl font-extrabold text-white tracking-tight">
                       Rp 300.000
@@ -191,11 +191,11 @@ export default function WebDevelopmentPricing() {
 
                   <ul className="space-y-3 mb-6 flex-1">
                     {[
-                      "Landing page (Up to 10 pages)",
-                      "Basic SEO",
-                      "Free basic domain",
-                      "Free entry hosting (1 GB)",
-                      "Free 5 images editing & 1 logo",
+                      "Landing page (Hingga 10 halaman)",
+                      "SEO Dasar",
+                      "Gratis domain dasar",
+                      "Gratis hosting entry (1 GB)",
+                      "Gratis edit 5 gambar & 1 logo",
                     ].map((feature, i) => (
                       <li key={i} className="flex items-start gap-3">
                         <svg
@@ -212,9 +212,9 @@ export default function WebDevelopmentPricing() {
                     ))}
                   </ul>
 
-                  <a href="https://wa.me/628135141357?text=Hello%20Nocturne,%20I%20am%20interested%20in%20the%20Premium%20Package." target="_blank" rel="noopener noreferrer" className="block text-center w-full py-3 px-6 rounded-full font-semibold text-white border border-blue-500/50 hover:bg-blue-500/10 transition-colors duration-300 text-sm">
-                    Choose Premium
-                  </a>
+                  <button className="w-full py-3 px-6 rounded-full font-semibold text-white border border-blue-500/50 hover:bg-blue-500/10 transition-colors duration-300 text-sm">
+                    Pilih Premium
+                  </button>
                 </div>
               </ScrollReveal>
 
@@ -223,10 +223,10 @@ export default function WebDevelopmentPricing() {
                   <div className="absolute inset-0 bg-blue-500/5 rounded-3xl pointer-events-none" />
 
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
-                    Recommended
+                    Rekomendasi
                   </div>
 
-                  <h3 className="text-xl font-bold mb-1">Exclusive Package</h3>
+                  <h3 className="text-xl font-bold mb-1">Paket Eksklusif</h3>
                   <div className="mb-5">
                     <span className="text-4xl font-extrabold text-white tracking-tight">
                       Rp 375.000
@@ -235,11 +235,11 @@ export default function WebDevelopmentPricing() {
 
                   <ul className="space-y-3 mb-6 flex-1 relative z-10">
                     {[
-                      "Fullstack Website (Unlimited pages)",
-                      "Advanced SEO",
-                      "Free popular domain (.com, .net, .id)",
-                      "Free small unlimited hosting",
-                      "Free 10 images editing & 1 logo",
+                      "Website Fullstack (Halaman Tidak Terbatas)",
+                      "SEO Lanjutan",
+                      "Gratis domain populer (.com, .net, .id)",
+                      "Gratis hosting tanpa batas (small)",
+                      "Gratis edit 10 gambar & 1 logo",
                     ].map((feature, i) => (
                       <li key={i} className="flex items-start gap-3">
                         <svg
@@ -256,8 +256,8 @@ export default function WebDevelopmentPricing() {
                     ))}
                   </ul>
 
-                  <a href="https://wa.me/628135141357?text=Hello%20Nocturne,%20I%20am%20interested%20in%20the%20Exclusive%20Package." target="_blank" rel="noopener noreferrer" className="block text-center relative z-10 w-full py-3 px-6 rounded-full font-semibold text-white bg-gradient-to-r from-[#3b82f6] to-[#8b5cf6] hover:shadow-[0_0_30px_rgba(59,130,246,0.6)] transition-all duration-300 transform hover:-translate-y-1 text-sm">
-                    Choose Exclusive
+                  <a href="https://wa.me/628135141357?text=Halo%20kak,%20aku%20tertarik%20dengan%20Paket%20Exclusive." target="_blank" rel="noopener noreferrer" className="block text-center relative z-10 w-full py-3 px-6 rounded-full font-semibold text-white bg-gradient-to-r from-[#3b82f6] to-[#8b5cf6] hover:shadow-[0_0_30px_rgba(59,130,246,0.6)] transition-all duration-300 transform hover:-translate-y-1 text-sm">
+                    Pilih Eksklusif
                   </a>
                 </div>
               </ScrollReveal>
@@ -268,7 +268,7 @@ export default function WebDevelopmentPricing() {
         <section className="w-full py-24 px-6 md:px-8 border-t border-white/5">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-5xl font-bold text-center bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-              Complex Terminologies
+              Terminologi Kompleks
             </h2>
 
             <div className="mt-12 space-y-4">

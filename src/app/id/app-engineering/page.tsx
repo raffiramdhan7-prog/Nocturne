@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Expert AI Engineering | Nocturne Indonesia",
-  description: "Bangun sistem kecerdasan buatan custom untuk optimasi alur kerja dan peningkatan kapabilitas produk Anda. Segera hadir di Nocturne Indonesia.",
+  title: "Pengembangan Aplikasi Mutakhir| Nocturne Indonesia",
+  description: "Transformasi kehadiran mobile Anda dengan aplikasi native yang dirancang untuk performa mulus di semua perangkat. Segera hadir di Nocturne Indonesia.",
 };
 
-export default function AIToolsComingSoon() {
+export default function AppEngineeringComingSoon() {
   return (
-    <div className="min-h-screen bg-black text-white font-sans flex flex-col items-center justify-center relative overflow-hidden px-6 md:px-8 selection:bg-blue-500/30">
+    <div className="min-h-screen bg-black text-white font-sans flex flex-col items-center justify-center relative overflow-hidden px-6 md:px-8 selection:bg-purple-500/30">
 
       {/* Global Header is rendered by layout.tsx */}
 
@@ -19,40 +19,40 @@ export default function AIToolsComingSoon() {
       </div>
 
       <main className="z-10 flex flex-col items-center text-center max-w-2xl w-full">
-        {/* Sparkles / AI Icon */}
+        {/* Smartphone SVG Icon */}
         <div className="w-24 h-24 mb-10 text-blue-500 drop-shadow-[0_0_20px_rgba(59,130,246,0.3)] animate-fade-up-100 opacity-0">
-          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.2}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" />
-            <path strokeLinecap="round" strokeLinejoin="round" d="M18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z" />
+          <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 2H9C7.346 2 6 3.346 6 5v14c0 1.654 1.346 3 3 3h6c1.654 0 3-1.346 3-3V5c0-1.654-1.346-3-3-3m-6 3h6v12H9z" />
+            <circle cx="12" cy="19.5" r="1" />
           </svg>
         </div>
 
         {/* Headline */}
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 opacity-0 animate-fade-up-300 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">
-          Expert AI Engineering
+          Pengembangan Aplikasi Mutakhir
         </h1>
 
         {/* Sub-headline */}
         <h2 className="text-xl md:text-2xl font-medium tracking-[0.3em] text-white/80 mb-8 opacity-0 animate-fade-up-500">
-          COMING SOON
+          SEGERA HADIR
         </h2>
 
         {/* Description */}
         <p className="text-gray-400 text-lg md:text-xl leading-relaxed max-w-md mx-auto mb-12 opacity-0 animate-fade-up-700">
-          We are architecting something intelligent in the dark.
-          Our cutting-edge AI automation tools will launch shortly.
+          Kami saat ini sedang merekayasa sesuatu yang luar biasa dalam kegelapan.
+          Layanan pengembangan seluler premium kami akan segera diluncurkan.
         </p>
 
         {/* Return Button */}
         <div className="opacity-0 animate-fade-up-700" style={{ animationDelay: '900ms' }}>
           <Link
-            href="/"
+            href="/id"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-semibold text-white border border-purple-500/30 bg-white/5 backdrop-blur-md hover:bg-white/10 hover:border-blue-500/50 hover:-translate-y-1 transition-all duration-300 group"
           >
             <svg className="w-5 h-5 text-blue-400 group-hover:-translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
             </svg>
-            Return to Home
+            Kembali ke Beranda
           </Link>
         </div>
 

@@ -11,7 +11,7 @@ export default function JsonLd() {
     "description": "Nocturne Indonesia adalah agensi creative engineering. Kami melayani jasa pembuatan website, app building, dan AI engineering.",
     "url": "https://nocturneindonesia.com",
 
-    "telephone": "+6281352920853",
+    "telephone": "+628135141357",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "ID"
